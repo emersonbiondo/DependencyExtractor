@@ -9,6 +9,7 @@ from rich.logging import RichHandler
 
 from .settings import AppSettings
 from .extractor import DependencyExtractor
+import commentjson as json
 
 def setup_logging(log_level: str):
     """

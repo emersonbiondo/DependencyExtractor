@@ -1,0 +1,58 @@
+{
+  // [EN] A list of root directories where the tool will search for dependencies.
+  // [PT-BR] Uma lista de diretórios raiz onde a ferramenta buscará por dependências.
+  "project_dirs": [
+    "D:\\Projetos\\MeuSistema\\backend\\src\\MySystem.Api",
+    "D:\\Projetos\\MeuSistema\\backend\\src\\MySystem.Application",
+    "D:\\Projetos\\MeuSistema\\backend\\src\\MySystem.Domain"
+  ],
+
+  // [EN] The entry point file(s) for the analysis.
+  // [PT-BR] O(s) arquivo(s) de ponto de entrada para a análise.
+  "source_files": [
+    "D:\\Projetos\\MeuSistema\\backend\\src\\MySystem.Application\\Services\\ProcessamentoPedidoService.cs"
+  ],
+
+  // [EN] Destination folder for the extracted files.
+  // [PT-BR] Pasta de destino para os arquivos extraídos.
+  "output_dir": "D:\\Extracoes\\Feature_ProcessamentoPedido",
+
+  // [EN] (Optional) Creates a zip file with the same content.
+  // [PT-BR] (Opcional) Cria um arquivo .zip com o mesmo conteúdo.
+  "zip_file": "D:\\Extracoes\\Feature_ProcessamentoPedido.zip",
+
+  // [EN] A list of directory names to completely ignore during the scan.
+  // [PT-BR] Uma lista de nomes de diretórios para ignorar completamente durante a varredura.
+  "ignore_dirs": [
+    "obj",
+    "bin",
+    "__pycache__",
+    "Test",
+    "Tests"
+  ],
+
+  // [EN] A list of file names or glob patterns to ignore.
+  // [PT-BR] Uma lista de nomes ou padrões de arquivo para ignorar.
+  "ignore_files": [
+    "*.user",
+    "*.suo",
+    "*.log",
+    ".DS_Store"
+  ],
+
+  // [EN] If true, extracts only direct dependencies (level 1). Default is false.
+  // [PT-BR] Se true, extrai apenas as dependências diretas (nível 1). O padrão é false.
+  "no_recursion": false,
+
+  // [EN] If true, generates a summary-report.md file. Default is true.
+  // [PT-BR] Se true, gera um arquivo summary-report.md. O padrão é true.
+  "generate_report": true,
+
+  // [EN] If true, sets the log level to DEBUG. Overridden by CLI flags.
+  // [PT-BR] Se true, define o nível de log para DEBUG. É sobrescrito por flags da CLI.
+  "verbose": true,
+  
+  // [EN] (Alternative to "verbose") Sets a specific log level.
+  // [PT-BR] (Alternativa para "verbose") Define um nível de log específico.
+  "log_level": "DEBUG"
+}
